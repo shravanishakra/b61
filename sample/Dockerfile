@@ -10,14 +10,14 @@ RUN apt-get update && \
     rm /var/www/html/index.html 
 
 #downloaded and add the zip file to the specified location
-ADD https://www.creative-tim.com/product/soft-ui-dashboard  /var/www/html/soft-ui-dashboard.zip
+ADD https://templatemo.com/download/templatemo_602_graph_page  /var/www/html/templatemo_602_graph_page.zip
 
 #switched working directory to the specified location
 WORKDIR /var/www/html  
 
 #unzip the file and move the contents to the specified location
-RUN unzip soft-ui-dashboard.zip && \
-    mv soft-ui-dashboard/* /var/www/html/
+RUN unzip templatemo_602_graph_page.zip && \
+    mv templatemo_602_graph_page/* /var/www/html/
 
 
 #exposed port for the container
