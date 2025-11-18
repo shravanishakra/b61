@@ -23,5 +23,16 @@ spec:
     app: nginx
   ports:
         - port: 80
-          targetPort: 80 
+          targetPort: 80
+
+#namspaces file 
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mynamespace
+  
+
+
 
