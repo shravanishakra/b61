@@ -4,13 +4,15 @@ metadata:
    name: nginx-replicas
 spec:
     replicas: 4
+    selector:
+      app: nginx
     template:
       metadata:
         labels:
           app: nginx
       spec:
         containers:
-          - ports: 
-              containerPort: 80
-            name: nginx-replicas
+          - name: nginx-replicas
             image: nginx
+            ports: 
+              containerPort: 80
