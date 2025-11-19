@@ -4,9 +4,7 @@ metadata:
    name: nginx-replicas
 spec:
     replicas: 4
-    selector:
-      app: nginx
-templeta:
+template:
   metadata:
     labels:
      app: nginx
