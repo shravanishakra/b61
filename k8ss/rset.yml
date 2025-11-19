@@ -10,13 +10,12 @@ spec:
      # matchLabels:
      #    app: nginx
       matchExpressions:
-        - {key: app, operator: In, values: [shraa , aru]}
+        - {key: app, operator: Exists}
     template:
       metadata:
         name: shraa
         labels:
-          app: aru
-          app: shraa
+          app: nginx
           #env: shraa
       spec:
         containers:
