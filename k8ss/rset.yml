@@ -8,7 +8,7 @@ spec:
       matchLabels:
          app: nginx
       matchExpressions:
-      - {key: app, selector: NotIn, values: [shraa, aru]}
+      - {key: app, operator: NotIn, values: [shraa, aru]}
     template:
       metadata:
         labels:
