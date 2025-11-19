@@ -7,13 +7,15 @@ spec:
     selector:
       matchLabels:
          app: nginx
+      matchExpressions:
+      - {key: app, selector: In, values: [shraa, aru]}
     template:
       metadata:
         labels:
-          app: nginx
+          app: shraa
       spec:
         containers:
           - name: nginx-replicas
-            image: nginx
+            image: apache2
             ports: 
              - containerPort: 80
