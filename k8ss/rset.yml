@@ -16,6 +16,6 @@ spec:
       spec:
         containers:
           - name: nginx-replicas
-            image: apache2
+            image: nginx
             ports: 
              - containerPort: 80
