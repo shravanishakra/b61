@@ -15,7 +15,8 @@ spec:
       metadata:
         name: shraa
         labels:
-          app: aru shraa
+          app: aru
+          app: shraa
           #env: shraa
       spec:
         containers:
