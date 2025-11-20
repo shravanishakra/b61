@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-      name:  MYAPP
+      name:  my-app
       labels:
-        app:  MYAPP
+        app:  my-app
 spec:
       strategy:
         type: RollingUpdate
@@ -12,12 +12,12 @@ spec:
           maxUnavailable: 1
       selector:
         matchLabels:
-          app: MYAPP
+          app: my-app
       replicas: 3
       template: 
         metadata:
           labels:
-            app: MYAPP
+            app: my-app
         spec:
           containers:
             - name: my-cont
