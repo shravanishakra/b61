@@ -21,6 +21,6 @@ spec:
         spec:
           containers:
             - name: my-cont
-              image: nginx
+              image: tomcat
               ports:
-                - containerPort: 80
+                - containerPort: 8080
