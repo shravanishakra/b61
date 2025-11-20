@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata: 
+   name: my-demon
+   labels:
+     app: my-demon
+spec:
+  selector:
+    matchLabels:
+      app: my-demon 
+  template:
+     metadata:
+       labels:
+         app: my-demon
+     spec: 
+          containers:
+            - name: log--cont 
+              image: amazon/cloudwatch-agent
+              ports:
+                - containerPort: 80
