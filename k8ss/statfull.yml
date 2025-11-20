@@ -12,7 +12,7 @@ metadata:
     template:
       metadata:
        labels:
-        app:  my-statefull
+          app:  my-statefull
       spec:
         containers:
           - image: mysql
